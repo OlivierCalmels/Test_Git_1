@@ -1,0 +1,62 @@
+/* --- Google Fonts --- */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
+
+/* --- Components design --- */
+@import url("components/avatar.css");
+@import url("components/badge.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/card design.css");
+@import url("components/card grid.css");
+@import url("components/card product.css");
+@import url("components/card trip.css");
+@import url("components/list type 1.css");
+@import url("components/footer.css");
+@import url("components/navbar.css");
+@import url("components/notification.css");
+@import url("components/search form.css");
+@import url("components/tabs underligned.css");
+@import url("components/tabs workbook.css");
+
+/*@import url("components/navbar.css");
+@import url("components/dropdown.css");*/
+
+
+@import url("components/list.css");
+
+/* --- Fonts --- */
+body {
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+  padding-bottom: 200px;
+}
+h1, h2, h3 {
+  font-family: "Montserrat", "sans-serif";
+}
+
+
+
+
+/*Alert*/
+.flash {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  margin: 8px;
+}
+
+.flash-success {
+  border: 2px solid #1EDD88;
+}
+
+.flash-warning {
+  border: 2px solid #FFC65A;
+}
+
+.flash-danger {
+  border: 2px solid #FD1015;
+}
+/*Alert*/
