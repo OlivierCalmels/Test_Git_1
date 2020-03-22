@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodeCademy Library</title>
+
+	<!--Bootstrap link  -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href= "css/style.css">
+
+	<!-- Fontawesome link -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<h1>My libraries index</h1>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="C:\Users\calme\Documents\Olivier\Mes docs\Professionnel\Ecoles\Le Wagon\Docs Olivier\Ma librairie\Index/index.html">Index libraries<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="C:\Users\calme\Documents\Olivier\Mes docs\Professionnel\Ecoles\Le Wagon\Docs Olivier\Ma librairie/LeWagonUILib/LeWagonUILib.html">Le Wagon UI library</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="C:\Users\calme\Documents\Olivier\Mes docs\Professionnel\Ecoles\Le Wagon\Docs Olivier\Ma librairie/CodeCademyLib/CodeCademyLib.html">CodeCademy Library</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Tableau -->
+		<div>
+			<h2>Tableau</h2>
+
+			<ul class="navigation">
+				<li class="active">Action List</li>
+				<li>Profiles</li>
+				<li>Settings</li>
+			</ul>
+
+			<div class="search">Search the table</div>
+			<table>
+
+				<tr>
+					<thead>
+						<th>Company name</th>
+						<th>Number of items to ship</th>
+						<th>next action</th>
+					</thead>
+				</tr>
+				<tb>
+					<tr>
+						<td rowspan="2">Adam's Greenworks</td>
+						<td>14</td>
+						<td>Package Items</td>
+					</tr>
+					<tr>
+						<td>Davie's Burgers</td>
+						<td>2</td>
+						<td>Send Invoice</td>
+					</tr>
+					<tr>
+						<td>Baker's Bike Shop</td>
+						<td>3</td>
+						<td>Send Invoice</td>
+					</tr>
+					<tr>
+						<td>Miss Sally's Southern</td>
+						<td>4</td>
+						<td>Ship</td>
+					</tr>
+					<tr>
+						<td>Summit Resort Rentals</td>
+						<td>4</td>
+						<td>Ship</td>
+					</tr>
+					<tr>
+						<td>Strike Fitness</td>
+						<td>1</td>
+						<td>Enter Order</td>
+					</tr>
+				</tb>
+				<tfoot>
+					<td>Total</td>
+					<td>28</td>
+				</tfoot>
+			</table>
+			<!-- /Tableau -->
+
+			<!-- Form -->
+			<h2>Form</h2>
+			<section id="overlay">
+				<hr>
+				<form action="submission.html" method="POST">
+					<h4>Create a burger!</h4>
+					<h5>Protein</h5>
+					<section class="protein">
+						<label for="patty">What type of protein would you like?</label>
+						<input type="text" name="patty" id="patty">
+					</section>
+					
+					<hr>
+					<h5>Patties</h5>
+					<section class="patties">
+						<label for="amount">How many patties would you like?</label>
+						<input type="number" name="amount" id="amount">
+					</section>
+					<hr>
+					
+					<h5>Cooked</h5>
+					<section class="cooked">
+						<label for="doneness">How do you want your patty cooked</label>
+						<br>
+						<span>Rare</span>
+						<input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+						<span>Well-Done</span>
+					</section>
+					<hr>
+
+					<h5>Toppings</h5>
+					<section class="toppings">
+						<span>What toppings would you like?</span>
+						<br>
+						<input type="checkbox" name="topping" id="lettuce" value="lettuce">
+						<label for="lettuce">Lettuce</label>
+						<input type="checkbox" name="topping" id="tomato" value="tomato">
+						<label for="tomato">Tomato</label>
+						<input type="checkbox" name="topping" id="onion" value="onion">
+						<label for="onion">Onion</label>
+					</section>
+
+					<hr>
+					<h5>Cheesy</h5>
+					<section class="cheesy">
+						<span>Would you like to add cheese?</span>
+						<br>
+						<input type="radio" name="cheese" id="yes" value="yes">
+						<label for="yes">Yes</label>
+						<input type="radio" name="cheese" id="no" value="yes">
+						<label for="no">No</label>
+					</section>
+					<hr>
+
+					<h5>Bun type</h5>
+					<section class="bun-type">
+						<label for="bun">What type of bun would you like?</label>
+						<select name="bun" id="bun">
+							<option value="sesame">Sesame</option>
+							<option value="potatoe">Potato</option>
+							<option value="pretzel">Pretzel</option>
+						</select>
+					</section>
+
+					<hr>
+					<h5>Sauce selection</h5>
+					<section class="sauce-selection">
+						<label for="sauce">What type of sauce would you like?</label>
+						<input list="sauces" id="sauce" name="sauce">
+						<datalist id="sauces">
+							<option value="ketchup"></option>
+							<option value="mayo"></option>
+							<option value="mustard"></option>
+						</datalist>
+					</section>
+					<hr>
+
+					<h5>Extra info</h5>
+					<section class="extra-info">
+						<label for="extra">Anything else you want to add?</label>
+						<br>
+						<textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+					</section>
+					<hr>
+					
+					<h5>Submit</h5>
+					<section class="submission">
+						<input type="submit" value="Submit">
+					</section>
+				</form>
+			</section>
+			<!--/ Form -->
+
+
+
+			<!-- Form validation -->
+			<h2>Form validation</h2>
+			<section class="overlay">
+				<h3>Sign Up</h3>
+				<p>Create an account:</p>
+				<form action="submission.html" method="GET">
+					<label for="username">Username:</label>
+					<br>
+					<input id="username" name="username" type="text" required minlength="3" maxlength="15">
+					<br>
+					<label for="pw">Password:</label>
+					<br>
+					<!--Add the pattern attribute to the input below-->
+					<input id="pw" name="pw" type="password" required minlength="8" maxlength="15">
+					<br>
+					<input type="submit" value="Submit">
+				</form>
+			</section>
+			<!-- /Form validation -->
+
+		</div>
+	</body>
+	</html>
