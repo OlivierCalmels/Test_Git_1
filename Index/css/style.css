@@ -1,0 +1,22 @@
+
+/* --- Fonts --- */
+
+.container {
+padding-bottom: 200px	;
+
+}
+
+.body {
+	font-family: "Open Sans", "Helvetica", "sans-serif";
+	padding-bottom: 200px;
+}
+.h1 {
+	font-family: "Montserrat", "sans-serif";
+	text-align: center;
+}
+
+
+.container h3,h5{
+	font-size: 16px;
+	color: red;
+}
